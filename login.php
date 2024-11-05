@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($loginSuccessful) {
             echo "Login succesfuldt! Velkommen, $username!";
             // Redirect til en beskyttet side eller dashboard
-            header("Location: index.html");
+            header("Location: /FJgames/index.html");
         } else {
             echo "Forkert brugernavn eller adgangskode!";
         }
