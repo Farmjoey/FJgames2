@@ -50,13 +50,13 @@ document.addEventListener("DOMContentLoaded", function () {
         // Hvis brugeren er logget ind, vis velkomstbesked og logout
         userInfo.innerHTML = `
           <a class="welcome-message">Velkommen, ${data.username}!</a>
-          <a class="login" href="logout.php" class="logout-btn">Logout</a>
+          <a class="login" href="/FJgames/logout.php" class="logout-btn">Logout</a>
         `;
       } else {
         // Hvis ikke logget ind, vis login og signup knapperne
         userInfo.innerHTML = `
-          <a class="login" href="/login.html" class="login-btn">Login</a>
-          <a class="login" href="/signup.html" class="signup-btn">Sign up</a>
+          <a class="login" href="/FJgames/login.html" class="login-btn">Login</a>
+          <a class="login" href="/FJgames/signup.html" class="signup-btn">Sign up</a>
         `;
       }
     })
@@ -74,4 +74,3 @@ document.addEventListener("DOMContentLoaded", function () {
     hamburger.addEventListener('click', () => {
       navLinks.classList.toggle('active');
     });
-
